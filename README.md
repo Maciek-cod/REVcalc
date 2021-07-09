@@ -67,12 +67,12 @@ List of transactions uploaded so far is defined in my_transactions.html and uses
 
 ## How to run the application
 
-1. Clone Revcalc directory from Maciek-cod account into your local server.
+1. Clone the code: `git clone https://github.com/Maciek-cod/Rev-calc.git`
 2. Open bash terminal at your local server and get into Revcalc directory.
-3. Install virtual environment with 'python3 -m venv myvenv' command for Linux and OS X, or 'python -m venv myvenv' command for Windows.
-4. After installing virtual environment start it by typing 'source myvenv/bin/activate' for Linux and OS X, or 'myvenv\Scripts\activate' command for Windows.
-5. Run 'pip install -r requirements.txt' command.
-6. Then run command 'python manage.py runserver'.
+3. Install virtual environment with `python3 -m venv myvenv` command for Linux and OS X, or `python -m venv myvenv` command for Windows.
+4. After installing virtual environment start it by typing `source myvenv/bin/activate` for Linux and OS X, or `myvenv\Scripts\activate` command for Windows.
+5. Run `pip install -r requirements.txt` command.
+6. Then run command `python manage.py runserver`.
 7. Copy the url 'http://127.0.0.1:8000/' and open it in your local browser.
 8. The website is now running.
 
