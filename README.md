@@ -60,7 +60,7 @@ In the models.py file, there are all Django model classes.
 Views.py takes a web request and returns a web response.
 Urls.py file defines the mapping between URLs and views.
 Forms.py contains Django forms code i.e. Document Form used to upload a text file.
-And the admin.py file is used to display my models in the Django admin panel.
+And the admin.py file is used to display models in the Django admin panel.
 
 ### GUI 
 
