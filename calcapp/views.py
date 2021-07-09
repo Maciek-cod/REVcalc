@@ -94,7 +94,7 @@ def my_transactions(request, user):
             total_profit += d.profit
             total_profit_pln += d.profit_pln
 
-    tax = total_profit * 0.20
+    tax = total_profit * 0.19
     tax_pln = float(total_profit_pln) * 0.19
 
     positive = ""

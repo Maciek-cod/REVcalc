@@ -3,6 +3,7 @@ from django.contrib.auth.models import AbstractUser
 from dateutil import parser
 import requests
 from datetime import timedelta
+from revcalc import settings
 
 
 class User(AbstractUser):
@@ -44,7 +45,7 @@ class Transaction(models.Model):
 
     @classmethod
     def load_from_revolut_txt(cls, file, user):
-        f = open("media/"+file.name, "r")
+        f = open(settings.MEDIA_ROOT + "/" + file.name, "r")
         lines  = f.readlines()
         for stock in lines:
             field_list = stock.split()

@@ -1,0 +1,7 @@
+._*
+.DS_Store
+.fseventsd
+.Spotlight-V100
+local.py
+*.sqlite3
+myvenv/

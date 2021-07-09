@@ -19,7 +19,7 @@
                 </form>
                 <div class="card-body text-center">
                     <div class="form-group">
-                        <h3 class="text-white">Your uploaded files so far:</h3>                          
+                        <h3 class="text-white mt-5">Your uploaded files so far:</h3>
                         {% if files %}
                             {% for file in files %}
                                 <a href="/media/{{file.document}}" class="text-warning" target="_blank">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="card-footer">
                     <h4 class="text-white text-center">My Transactions:</h4>
-                    <a class="btn add_btn mb-4" href="{% url 'my_transactions' user.id %}">Report</a>
+                    <a class="btn add_btn mb-4" href="{% url 'my_transactions' user.id %}#totals">Report</a>
                 </div>
             </div>
         </div>
