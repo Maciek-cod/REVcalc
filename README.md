@@ -1,6 +1,6 @@
 # REVcalc
 
-### Capital tax and profit calculator from stock investments at Revolut with USD to PLN currency conversion.
+**Capital tax and profit calculator from stock investments at Revolut with USD to PLN currency conversion.**
 
 ## Problem description
 
@@ -25,16 +25,21 @@ My app calculates the profit and 19% tax using FIFO (First In First Out) method.
 - other small libraries or packages
 [https://dateutil.readthedocs.io/](https://dateutil.readthedocs.io/en/stable/parser.html)
 
+## To view an example report, please log in using the following credentials:
+
+[Revcalc](https://revcalc.pythonanywhere.com/)  
+Username: demo  
+Password: demo
+
 ## Distinctiveness and Complexity
 
 This is a web application.   
-It stores all original files uploaded by the users on the server disk and the metadata in the SQLLighttl database it 
-also stores all transactions in two database tables.  
+It stores all original files uploaded by the users on the server disk and the metadata in the SQLLightl database it also stores all transactions in two database tables.  
 
 - Main table is named 'Transaction'  
-- Second table is named 'Sell detail'  
+- Second table is named 'Sell_detail'  
 
-When user uploads file all transactions are parsed, and added to 'Transaction' table and if a transaction is a sell transaction then additional rows are added to 'Sell detail' table to store assasinations with transactions buy. 
+When user uploads file all transactions are parsed, and added to 'Transaction' table and if a transaction is a sell transaction then additional rows are added to 'Sell_detail' table to store assasinations with transactions buy. 
 
 Once a user is logged in, 
 the user can upload a text file with transactions copied from their Revolut statement file.
@@ -63,7 +68,6 @@ Urls.py file defines the mapping between URLs and views.
 Forms.py contain Django forms code.
 And the admin.py file is used to display my models in the Django admin panel.
 
-
 ### GUI 
 
 Menu is defined in layout.html.  
@@ -72,7 +76,6 @@ Form to login is defined in login.html and uses 'login_view' function in views.p
 Form for uploading new txt file with transactions copied from monthly Revolut statment is defined in load_data.html and uses 'load_data' function in views.py.  
 List of documents uploaded so far is defined in load_data.html and uses 'load_data' function in views.py.  
 Sell details of uploaded transactions so far is defined in my_transactions.html and uses 'my_transactions' function in views.py.  
-
 
 ## How to run the application
 
@@ -85,7 +88,6 @@ Sell details of uploaded transactions so far is defined in my_transactions.html 
 7. Copy the url 'http://127.0.0.1:8000/' and open it in your local browser.
 8. The website is now running.
 
-
 ## How to use the application
 
 1. Create new account. 
@@ -93,14 +95,6 @@ Sell details of uploaded transactions so far is defined in my_transactions.html 
 3. Click Load data and upload the txt file to the database.
 4. Click 'Report' to view results of all transactions calculations.
 5. Click 'My transactions' to see all stocks selling details.
-
-
-### To view an example report, please log in using the following credentials:
-
-[Revcalc](https://revcalc.pythonanywhere.com/)  
-Username: demo  
-Password: demo
-
 
 ## Possible improvments
 
