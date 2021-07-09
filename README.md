@@ -25,7 +25,7 @@ My app calculates the profit and 19% tax using FIFO (First In First Out) method.
 - other small libraries or packages
 [https://dateutil.readthedocs.io/](https://dateutil.readthedocs.io/en/stable/parser.html)
 
-## To view an example report, please log in using the following credentials:
+### To view an example report, please log in using the following credentials:
 
 [Revcalc](https://revcalc.pythonanywhere.com/)  
 Username: demo  
