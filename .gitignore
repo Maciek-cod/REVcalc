@@ -4,4 +4,7 @@
 .Spotlight-V100
 local.py
 *.sqlite3
+.env
 myvenv/
+venv/
+myvenv
