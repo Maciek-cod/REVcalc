@@ -34,8 +34,7 @@ Password: demo
 ## Distinctiveness and Complexity
 
 This web application stores all original files uploaded by the users on the server disk   
-and the metadata in the SQLLightl database.  
-It also stores all transactions in two database tables: 
+and the metadata in the SQLLightl database. It also stores all transactions in two database tables: 
 
 - Main table is named 'Transaction'  
 - Second table is named 'Sell_detail'  
