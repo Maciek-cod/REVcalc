@@ -62,7 +62,7 @@ Form to register new user is defined in register.html and uses 'register' functi
 Form to login is defined in login.html and uses 'login_view' function in views.py.   
 Form for uploading new txt file with transactions copied from monthly steatment from Revolut is defined in load_data.html and uses 'load_data' function in views.py.  
 List of document uploaded so far is defined in load_data.html and uses 'load_data' function in views.py.  
-List of transactions uploaded so far is defined in my_transactions.html and uses my_transactions function in views.py.  
+List of transactions uploaded so far is defined in my_transactions.html and uses 'my_transactions' function in views.py.  
 
 
 ## How to run the application
@@ -87,7 +87,7 @@ List of transactions uploaded so far is defined in my_transactions.html and uses
 
 
 ### To view an example report, please log in using the following credentials:
-[](https://revcalc.pythonanywhere.com/)
+[Revcalc](https://revcalc.pythonanywhere.com/)
 
 Username: demo
 Password: demo
