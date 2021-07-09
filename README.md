@@ -47,7 +47,7 @@ Once a user is logged in, user can upload a text file with transactions copied f
 03/16/2020 03/17/2020 USD BUY EBAY - EBAY INC COM - TRD EBAY B 3 at 20.00 Agency. 3 20.00 (60.00)
 03/19/2020 03/18/2020 USD SELL EBAY - EBAY INC COM - TRD EBAY S 2 at 30.00 Agency. -2 30.00 60.00 
 
-When the user uploads the file, all transactions are analysed and added to the "Transaction" table. If the transaction is a sale transaction profit on each sale is caclulated by subtracting the selling price of the stock from the first stock purchased and adds extra rows to the "Sell_detail" table with links to the purchased transactions and profits from their sales. In order to see the profit and the tax to pay, user needs to click '**Report**'.
+When the user uploads the file, all transactions are analysed and added to the "Transaction" table. If the transaction is a sale transaction profit on each sale is calculated by subtracting the selling price of the stock from the first stock purchased and adds extra rows to the "Sell_detail" table with links to the purchased transactions and profits from their sales. In order to see the profit and the tax to pay, the user needs to click '**Report**'.
 
 ### Files created
 
@@ -57,27 +57,27 @@ Inside that application is a folder named *static* where all static files are st
 - style.css file stores CSS code to describe the presentation of the document.
 
 Another folder inside Revcalc directory named *templates* contains all HTML files.
-In the models.py file there are all Django model classes.
+In the models.py file, there are all Django model classes.
 Views.py takes a web request and returns a web response.
 Urls.py file defines the mapping between URLs and views.
-Forms.py contains Django forms code i.e. Document Form used to upload a txt file.
+Forms.py contains Django forms code i.e. Document Form used to upload a text file.
 And the admin.py file is used to display my models in the Django admin panel.
 
 ### GUI 
 
-Menu is defined in layout.html.  
-Form to register new user is defined in register.html and uses 'register' function in views.py.  
-Form to login is defined in login.html and uses 'login_view' function in views.py.   
+The menu is defined in layout.html.  
+Form to register a new user is defined in register.html and uses the 'register' function in views.py.  
+Form to login is defined in login.html and uses the 'login_view' function in views.py.   
 Form for uploading new txt file with transactions copied from monthly Revolut Statement is defined in load_data.html and uses 'load_data' function in views.py.  
-List of documents uploaded so far is defined in load_data.html and uses 'load_data' function in views.py.  
-Sell details of uploaded transactions so far is defined in my_transactions.html and uses 'my_transactions' function in views.py.  
+The list of documents uploaded so far is defined in load_data.html and uses the 'load_data' function in views.py.  
+Sell details of uploaded transactions so far are defined in my_transactions.html and uses the 'my_transactions' function in views.py.  
 
 ## How to run the application
 
 1. Clone the code: `git clone https://github.com/Maciek-cod/Rev-calc.git`
-2. Open bash terminal at your local server and get into Revcalc directory.
+2. Open the bash terminal at your local server and get into Revcalc directory.
 3. Install virtual environment with `python3 -m venv myvenv` command for Linux and OS X, or `python -m venv myvenv` command for Windows.
-4. After installing virtual environment start it by typing `source myvenv/bin/activate` for Linux and OS X, or `myvenv\Scripts\activate` command for Windows.
+4. After installing the virtual environment start it by typing `source myvenv/bin/activate` for Linux and OS X, or `myvenv\Scripts\activate` command for Windows.
 5. Run `pip install -r requirements.txt` command.
 6. Then run command `python manage.py runserver`.
 7. Copy the url 'http://127.0.0.1:8000/' and open it in your local browser.
@@ -85,11 +85,11 @@ Sell details of uploaded transactions so far is defined in my_transactions.html 
 
 ## How to use the application
 
-1. Create new account. 
-2. Create txt file with transactions copied from your Revolut trading Statement on your local server.
-3. Click Load data and upload the txt file to the database.
-4. Click 'Report' to view results of all transactions calculations.
-5. Click 'My transactions' to see all stocks selling details.
+1. Create a new account. 
+2. Create a text file with transactions copied from your Revolut trading Statement on your local server.
+3. Click Load data and upload the text file to the database.
+4. Click 'Report' to view the results of all transactions calculations.
+5. Click 'My transactions' to see all stock selling details.
 
 ## Possible improvements
 
@@ -97,4 +97,4 @@ Sell details of uploaded transactions so far is defined in my_transactions.html 
 - Downloadable Pdf report
 - Sales forecast for user's active shares
 - Personalised investing statistics
-- Improvments interface design
+- Improvements interface design
