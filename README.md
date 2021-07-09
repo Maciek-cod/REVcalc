@@ -33,25 +33,23 @@ Password: demo
 
 ## Distinctiveness and Complexity
 
-This is a web application.   
-It stores all original files uploaded by the users on the server disk and the metadata in the SQLLightl database it also stores all transactions in two database tables.  
+This web application stores all original files uploaded by the users on the server disk   
+and the metadata in the SQLLightl database.  
+It also stores all transactions in two database tables: 
 
 - Main table is named 'Transaction'  
 - Second table is named 'Sell_detail'  
 
-When user uploads file all transactions are parsed, and added to 'Transaction' table and if a transaction is a sell transaction then additional rows are added to 'Sell_detail' table to store assassinations with transactions buy. 
-
-Once a user is logged in, 
-the user can upload a text file with transactions copied from their Revolut statement file.
+Once a user is logged in, user can upload a text file with transactions copied from their Revolut statement file.
 
 *E.g.*
 
 03/16/2020 03/17/2020 USD BUY EBAY - EBAY INC COM - TRD EBAY B 3 at 20.00 Agency. 3 20.00 (60.00)
-03/19/2020 03/18/2020 USD SELL EBAY - EBAY INC COM - TRD EBAY S 2 at 30.00 Agency. -2 30.00 60.00
+03/19/2020 03/18/2020 USD SELL EBAY - EBAY INC COM - TRD EBAY S 2 at 30.00 Agency. -2 30.00 60.00 
 
-The application reads the file content, parses all transactions, 
-inserts them to the SQLight database and makes calculations.
-In order to see the profit and the tax to pay, user needs to click '**My Transactions**'.
+When user uploads file all transactions are parsed, and added to 'Transaction' table and if a transaction is a sell transaction then additional rows are added to 'Sell_detail' table to store assassinations with transactions buy.   
+
+In order to see the profit and the tax to pay, user needs to click '**Report**'.
 
 ### Files created
 
