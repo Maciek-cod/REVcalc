@@ -9,3 +9,4 @@ myvenv/
 venv/
 myvenv
 db.sqlite3
+media/

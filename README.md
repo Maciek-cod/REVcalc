@@ -39,7 +39,7 @@ It stores all original files uploaded by the users on the server disk and the me
 - Main table is named 'Transaction'  
 - Second table is named 'Sell_detail'  
 
-When user uploads file all transactions are parsed, and added to 'Transaction' table and if a transaction is a sell transaction then additional rows are added to 'Sell_detail' table to store assasinations with transactions buy. 
+When user uploads file all transactions are parsed, and added to 'Transaction' table and if a transaction is a sell transaction then additional rows are added to 'Sell_detail' table to store assassinations with transactions buy. 
 
 Once a user is logged in, 
 the user can upload a text file with transactions copied from their Revolut statement file.
@@ -53,19 +53,18 @@ The application reads the file content, parses all transactions,
 inserts them to the SQLight database and makes calculations.
 In order to see the profit and the tax to pay, user needs to click '**My Transactions**'.
 
-
 ### Files created
 
 Inside a directory called Revcalc is an application named *calcapp*.
 Inside that application is a folder named *static* where all static files are stored:
-- script.js file is JavaScript code to give web pages interactive elements that engage a user, like responsive menu.
+- script.js file is JavaScript code to give web pages interactive elements that engage a user, like responsive menu and 'Please wait... Uploading new file.' message.
 - style.css file stores CSS code to describe the presentation of the document.
 
 Another folder inside Revcalc directory named *templates* contains all HTML files.
 In the models.py file there are all Django model classes.
 Views.py takes a web request and returns a web response.
 Urls.py file defines the mapping between URLs and views.
-Forms.py contain Django forms code.
+Forms.py contains Django forms code i.e. Document Form used to upload a txt file.
 And the admin.py file is used to display my models in the Django admin panel.
 
 ### GUI 
@@ -73,7 +72,7 @@ And the admin.py file is used to display my models in the Django admin panel.
 Menu is defined in layout.html.  
 Form to register new user is defined in register.html and uses 'register' function in views.py.  
 Form to login is defined in login.html and uses 'login_view' function in views.py.   
-Form for uploading new txt file with transactions copied from monthly Revolut statment is defined in load_data.html and uses 'load_data' function in views.py.  
+Form for uploading new txt file with transactions copied from monthly Revolut Statement is defined in load_data.html and uses 'load_data' function in views.py.  
 List of documents uploaded so far is defined in load_data.html and uses 'load_data' function in views.py.  
 Sell details of uploaded transactions so far is defined in my_transactions.html and uses 'my_transactions' function in views.py.  
 
@@ -91,15 +90,15 @@ Sell details of uploaded transactions so far is defined in my_transactions.html 
 ## How to use the application
 
 1. Create new account. 
-2. Create txt file with transactions coppied from your Revolut trading Statment on your local server.
+2. Create txt file with transactions copied from your Revolut trading Statement on your local server.
 3. Click Load data and upload the txt file to the database.
 4. Click 'Report' to view results of all transactions calculations.
 5. Click 'My transactions' to see all stocks selling details.
 
-## Possible improvments
+## Possible improvements
 
 - Conversion from USD to GBP and other currencies according to local tax regulations.
 - Downloadable Pdf report
 - Sales forecast for user's active shares
-- Personalised investings statistics
-- Improved interface designs 
+- Personalised investing statistics
+- Improvments interface design
