@@ -30,8 +30,10 @@ My app calculates the profit and 19% tax using FIFO (First In First Out) method.
 This is a web application.   
 It stores all original files uploaded by the users on the server disk and the metadata in the SQLLighttl database it 
 also stores all transactions in two database tables.  
+
 - Main table is named 'Transaction'  
 - Second table is named 'Sell detail'  
+
 When user uploads file all transactions are parsed, and added to 'Transaction' table and if a transaction is a sell transaction then additional rows are added to 'Sell detail' table to store assasinations with transactions buy. 
 
 Once a user is logged in, 
