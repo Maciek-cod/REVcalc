@@ -53,7 +53,7 @@ When the user uploads the file, all transactions are analysed and added to the "
 
 Inside a directory called Revcalc is an application named *calcapp*.
 Inside that application is a folder named *static* where all static files are stored:
-- script.js file is JavaScript code to give web pages interactive elements that engage a user, like responsive menu and 'Please wait... Uploading new file.' message.
+- script.js file is JavaScript code to give web pages interactive elements that engage a user like a responsive menu and 'Please wait... Uploading new file.' message.
 - style.css file stores CSS code to describe the presentation of the document.
 
 Another folder inside Revcalc directory named *templates* contains all HTML files.
