@@ -13,7 +13,7 @@
                     {% csrf_token %}
                     <div class="popup">
                         {{ form }}
-                        <button class="btn btn-success index-button-upload" onclick="checkProfit()" type="file">Upload file</button>
+                        <button class="btn btn-success index-button-upload" onsubmit="checkProfit()" type="file">Upload file</button>
                         <span class="popuptext" id="myPopup">Please wait... Uploading new file.</span>
                     </div>
                 </form>
