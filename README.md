@@ -36,8 +36,8 @@ Password: demo
 This web application stores all original files uploaded by the users on the server disk   
 and the metadata in the SQLLightl database. It also stores all transactions in two database tables: 
 
-- Main table is named 'Transaction'  
-- Second table is named 'Sell_detail'  
+- The main table is named 'Transaction'  
+- The second table is named 'Sell_detail'  
 
 Once a user is logged in, user can upload a text file with transactions copied from their Revolut statement file.
 
@@ -46,7 +46,8 @@ Once a user is logged in, user can upload a text file with transactions copied f
 03/16/2020 03/17/2020 USD BUY EBAY - EBAY INC COM - TRD EBAY B 3 at 20.00 Agency. 3 20.00 (60.00)
 03/19/2020 03/18/2020 USD SELL EBAY - EBAY INC COM - TRD EBAY S 2 at 30.00 Agency. -2 30.00 60.00 
 
-When the user uploads the file, all transactions are analyzed and added to the "Transaction" table. If the transaction is a sale transaction, profit on each sale is calculated by subtracting the selling price of the stock from the first stock purchased and adds extra rows to the "Sell_detail" table with links to the purchased transactions and profits from their sales. In order to see the profit and the tax to pay, the user needs to click '**Report**'.
+When the user uploads the file, all transactions are analyzed and added to the "Transaction" table.  
+If the transaction is a sale transaction, profit on each sale is calculated by subtracting the selling price of the stock from the first stock purchased and adds extra rows to the "Sell_detail" table with links to the purchased transactions and profits from their sales. In order to see the profit and the tax to pay, the user needs to click '**Report**'.
 
 ### Files created
 
