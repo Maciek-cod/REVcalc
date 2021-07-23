@@ -4,6 +4,7 @@ from dateutil import parser
 import requests
 from datetime import timedelta
 from revcalc import settings
+from .validators import validate_file_extension
 
 
 class User(AbstractUser):
@@ -12,7 +13,7 @@ class User(AbstractUser):
 
 class Document(models.Model):
     user = models.ForeignKey("User", on_delete=models.CASCADE, related_name="usery")
-    document = models.FileField(upload_to='documents/')
+    document = models.FileField(upload_to='documents/', validators=[validate_file_extension])
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
 

@@ -10,6 +10,7 @@ from .forms import DocumentForm
 from django.contrib.auth.decorators import login_required
 
 
+
 def index(request):
     return render(request, 'calcapp/index.html')
 
@@ -48,7 +49,10 @@ def register(request):
             return render(request, "calcapp/register.html", {
                 "message": "Passwords must match."
             })
-
+        if username == "" or email == "" or password == "" or confirmation == "":
+            return render(request, "calcapp/register.html", {
+                "message": "All fields MUST be filled."
+            })
         # Attempt to create new user
         try:
             user = User.objects.create_user(username, email, password)
