@@ -27,7 +27,6 @@ html,body{
   color: white !important;
   padding: 50px;
   margin-top: 200px;
-  margin-bottom: 100px;
 }
 
 .my_transactions_title {
@@ -61,9 +60,7 @@ html,body{
 }
 .card-load-data{
   margin-top: 200px;
-  margin-bottom: 100px;
   background-color: rgba(0,0,0,0.5) !important;
-  position: static;
 }
 
 .card-header h3{

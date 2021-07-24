@@ -62,11 +62,12 @@ Inside that application is a folder named *static* where all static files are st
 - script.js file is JavaScript code to give web pages interactive elements that engage a user like a responsive menu and 'Please wait... Uploading new file.' message.
 - style.css file stores CSS code to describe the presentation of the document.
 
-Another folder inside Revcalc directory named *templates* contains all HTML files.
+Another folder inside Revcalc directory named *templates* has all HTML files.
 In the models.py file, there are all Django model classes.
-Views.py takes a web request and returns a web response.
+Views.py file takes a web request and returns a web response.
 Urls.py file defines the mapping between URLs and views.
-Forms.py contains Django forms code i.e. Document Form used to upload a text file.
+Forms.py file has Django forms code i.e. Document Form used to upload a text file.
+Validators.py file has validating uploaded file extension function.
 And the admin.py file is used to display models in the Django admin panel.
 
 ### GUI 
